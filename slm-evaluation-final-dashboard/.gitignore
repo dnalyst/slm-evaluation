@@ -1,0 +1,24 @@
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local machine and notebook clutter
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+
+# Generated temporary outputs
+tmp/
+temp/
