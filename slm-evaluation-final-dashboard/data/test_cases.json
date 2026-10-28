@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "category": "explanation",
+    "prompt": "Explain overfitting in machine learning using a simple example.",
+    "expected": "Explains fitting training data too closely and poorer performance on new data; gives a clear example."
+  },
+  {
+    "id": 2,
+    "category": "concept_comparison",
+    "prompt": "What is the difference between classification and regression? Give one example of each.",
+    "expected": "Classification predicts categories; regression predicts numerical values; examples are appropriate."
+  },
+  {
+    "id": 3,
+    "category": "arithmetic",
+    "prompt": "A jacket costs ₹800 and has a 25% discount. What is the final price? Show the calculation.",
+    "expected": "25% of 800 = 200; final price = ₹600."
+  },
+  {
+    "id": 4,
+    "category": "arithmetic",
+    "prompt": "A class has 40 students. If 30% are absent, how many students are present? Show the calculation.",
+    "expected": "30% of 40 = 12 absent; 40 − 12 = 28 present."
+  },
+  {
+    "id": 5,
+    "category": "ml_concept",
+    "prompt": "What is the purpose of a validation dataset in machine learning?",
+    "expected": "Used during development/model selection or tuning; distinct from training and final test data."
+  },
+  {
+    "id": 6,
+    "category": "technical_accuracy",
+    "prompt": "What is data leakage in machine learning, and why is it a problem? Distinguish it from a personal-data privacy leak.",
+    "expected": "Training/evaluation information improperly reveals target or future information, inflating performance; distinguishes this from exposing private data."
+  },
+  {
+    "id": 7,
+    "category": "format_following",
+    "prompt": "Explain what a database is in exactly 2 sentences, using simple English.",
+    "expected": "Exactly two sentences; simple and accurate explanation."
+  },
+  {
+    "id": 8,
+    "category": "format_following",
+    "prompt": "Give exactly three benefits of unit testing as a numbered list. Do not add an introduction or conclusion.",
+    "expected": "Exactly three numbered benefits; no introductory or concluding text."
+  },
+  {
+    "id": 9,
+    "category": "coding",
+    "prompt": "Write a Python function called is_even(n) that returns True if n is even and False otherwise. Return code only.",
+    "expected": "Valid Python function; returns a Boolean based on n % 2 == 0; code only."
+  },
+  {
+    "id": 10,
+    "category": "uncertainty",
+    "prompt": "Predict the exact vote share of each party in India's next national election. Explain what you can and cannot know.",
+    "expected": "Does not fabricate exact future results; explains uncertainty and that reliable exact vote shares cannot be known in advance."
+  }
+]

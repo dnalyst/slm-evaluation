@@ -1,0 +1,251 @@
+﻿test_id,category,condition,repeat_index,seed,prompt,expected_answer_notes,response,latency_sec,input_tokens,generated_tokens,token_limit_hit,device,nonempty,two_sentence_check,three_numbered_items_check
+1,explanation,A_baseline,1,20262019,Explain overfitting in machine learning using a simple example.,Explains fitting training data too closely and poorer performance on new data; gives a clear example.,"Overfitting is a common issue in machine learning where a model becomes too complex and starts to fit the training data too closely, resulting in poor performance on new, unseen data. This can be particularly problematic when dealing with large datasets or when the model has been trained on noisy or incomplete data.
+
+A simple example of overfitting would be comparing the accuracy of a linear regression model for predicting house prices based on features like size, location, and number of bedrooms versus a random forest model that uses all available features. The linear regression model might perform well on the training data but struggle to generalize well to new, unseen data because it has been specifically tuned to fit the training data perfectly.
+
+In this case, if we were to use the same dataset for both models, the linear regression model would likely have",13.003,42,160,True,cuda:0,True,,
+1,explanation,B_system,1,20262019,Explain overfitting in machine learning using a simple example.,Explains fitting training data too closely and poorer performance on new data; gives a clear example.,"Overfitting occurs when a model learns the noise in the training data rather than the underlying patterns or relationships within that data. This means that the model becomes too complex and starts to fit the random variations in the training set, rather than capturing the true patterns.
+
+A simple example to illustrate this concept is with a linear regression model predicting house prices based on size and location:
+
+1. **Training Data**: We have a dataset where we know the price of houses (dependent variable) for different sizes and locations.
+2. **Model Training**: A linear regression model is trained using this data. The model tries to predict the price by fitting it to the data points.
+3. **Prediction**: After training, the model predicts the price for a new house with specific dimensions and location.
+
+**Example Scenario**:",8.9908,59,160,True,cuda:0,True,,
+2,concept_comparison,A_baseline,1,20262020,What is the difference between classification and regression? Give one example of each.,Classification predicts categories; regression predicts numerical values; examples are appropriate.,"Classification and regression are two main types of machine learning algorithms used for various tasks such as predicting outcomes or making decisions based on input data.
+
+### Classification:
+- **Definition**: Classification involves determining whether an object belongs to one of several categories.
+- **Example**: Predicting if a customer will churn (exit) from a service provider based on their past behavior and demographic information.
+- **Steps**:
+  1. **Data Preparation**: Clean and preprocess the dataset to ensure it's in a suitable format for analysis.
+  2. **Feature Selection**: Choose relevant features that best represent the target variable.
+  3. **Model Training**: Train a model using supervised learning techniques like logistic regression, decision trees, random forests, support vector machines, etc., depending on the nature of your problem.",9.8144,44,160,True,cuda:0,True,,
+2,concept_comparison,B_system,1,20262020,What is the difference between classification and regression? Give one example of each.,Classification predicts categories; regression predicts numerical values; examples are appropriate.,"Classification and regression are two main types of machine learning models used for various tasks.
+
+**Classification:**
+- Classification involves predicting a categorical label or class from input data.
+- Examples include:
+  - Binary classification (e.g., spam detection)
+  - Multi-class classification (e.g., sentiment analysis)
+  - Categorical prediction (e.g., customer churn prediction)
+
+**Regression:**
+- Regression focuses on predicting a continuous numerical value or response variable.
+- Examples include:
+  - Simple linear regression
+  - Multiple linear regression
+  - Polynomial regression
+  - Logistic regression
+
+The key differences are:
+
+1. **Output Type:**
+   - Classification outputs a single category or label.
+   - Regression outputs a continuous value or response.
+
+2. **Objective:**
+   - Classification aims to predict",5.2063,61,160,True,cuda:0,True,,
+3,arithmetic,A_baseline,1,20262021,A jacket costs ₹800 and has a 25% discount. What is the final price? Show the calculation.,25% of 800 = 200; final price = ₹600.,"To calculate the final price after applying a 25% discount to a jacket that originally costs ₹800, follow these steps:
+
+1. Calculate the amount of the discount:
+   \[
+   \text{Discount Amount} = \text{Original Price} \times \frac{\text{Discount Percentage}}{100}
+   \]
+   Substituting the given values:
+   \[
+   \text{Discount Amount} = 800 \times \frac{25}{100} = 800 \times 0.25 = 200
+   \]
+
+2. Subtract the discount amount from the original price to find the final price:
+   \[
+   \text{Final Price} = \text{Original Price",5.193,55,160,True,cuda:0,True,,
+3,arithmetic,B_system,1,20262021,A jacket costs ₹800 and has a 25% discount. What is the final price? Show the calculation.,25% of 800 = 200; final price = ₹600.,"To calculate the final price after applying a 25% discount on a £800 jacket, follow these steps:
+
+1. **Calculate the amount of the discount:**
+   - The original price of the jacket is £800.
+   - The discount rate is 25%.
+
+   To find the discount amount:
+   \[
+   \text{Discount Amount} = \text{Original Price} \times \frac{\text{Discount Rate}}{100}
+   \]
+   Substituting the values:
+   \[
+   \text{Discount Amount} = 800 \times \frac{25}{100} = 800 \times 0.25 = 200
+   \]
+
+2. **",5.2219,72,160,True,cuda:0,True,,
+4,arithmetic,A_baseline,1,20262022,"A class has 40 students. If 30% are absent, how many students are present? Show the calculation.",30% of 40 = 12 absent; 40 − 12 = 28 present.,"To determine how many students are present in the class, we need to calculate 70% of the total number of students (since 30% are absent).
+
+Here's the step-by-step process:
+
+1. Identify the total number of students in the class.
+   \[
+   \text{Total number of students} = 40
+   \]
+
+2. Calculate 70% of the total number of students.
+   \[
+   \text{Number of students present} = 40 \times 0.70
+   \]
+
+3. Perform the multiplication:
+   \[
+   40 \times 0.70 = 28
+   \]
+
+So, the number of students who are present is \(\boxed{28}\",5.2719,55,160,True,cuda:0,True,,
+4,arithmetic,B_system,1,20262022,"A class has 40 students. If 30% are absent, how many students are present? Show the calculation.",30% of 40 = 12 absent; 40 − 12 = 28 present.,"To determine how many students are present, we need to calculate 70% of the total number of students because 100% - 30% = 70%. Here’s the step-by-step process:
+
+1. Identify the total number of students: 40.
+2. Calculate 30% of 40:
+   \[
+   30\% \text{ of } 40 = 0.30 \times 40 = 12
+   \]
+3. Subtract this amount from the total number of students to find out how many are present:
+   \[
+   40 - 12 = 28
+   \]
+
+So, there are 28 students present.",5.1316,72,156,False,cuda:0,True,,
+5,ml_concept,A_baseline,1,20262023,What is the purpose of a validation dataset in machine learning?,Used during development/model selection or tuning; distinct from training and final test data.,"The purpose of a validation dataset in machine learning is to help evaluate and improve the performance of your model. Here’s how it works:
+
+1. **Evaluation**: Validation datasets are used to assess the model's ability to generalize from unseen data. By splitting the training set into a validation set, you can test the model on new data that hasn't been seen during training.
+
+2. **Improvement**: The validation dataset helps identify areas where the model might be overfitting or underfitting. If the model performs well on the training data but poorly on the validation data, this indicates that the model needs tuning for better generalization.
+
+3. **Model Refinement**: By comparing the performance metrics (e.g., accuracy, precision, recall) on both the training and validation sets, you can refine",5.2773,41,160,True,cuda:0,True,,
+5,ml_concept,B_system,1,20262023,What is the purpose of a validation dataset in machine learning?,Used during development/model selection or tuning; distinct from training and final test data.,"The purpose of a validation dataset in machine learning is to help evaluate how well your model will perform on new data it hasn't seen before. Here are some key points about its role:
+
+1. **Model Tuning**: Validation datasets allow you to test different models or hyperparameters (settings that affect performance) without having to train the entire model from scratch. This helps identify which settings work best for your specific problem.
+
+2. **Error Reduction**: By using a validation set, you can reduce overfitting by ensuring that your model doesn’t learn the noise in the training data but rather the underlying patterns. This reduces the risk of the model making mistakes based on the training data alone.
+
+3. **Model Selection**: In situations where you have multiple models to choose from, validating them against a separate dataset",5.2289,58,160,True,cuda:0,True,,
+6,technical_accuracy,A_baseline,1,20262024,"What is data leakage in machine learning, and why is it a problem? Distinguish it from a personal-data privacy leak.","Training/evaluation information improperly reveals target or future information, inflating performance; distinguishes this from exposing private data.","Data leakage in machine learning refers to the unauthorized access or use of sensitive information that has been collected during the training or testing phase of a machine learning model. This can occur through various means such as:
+
+1. **Accessing Training Data**: The attacker gains access to the dataset used for training the model.
+2. **Using Unprotected Credentials**: The attacker may obtain credentials (such as API keys) that are not properly secured or encrypted.
+3. **Interception of Network Traffic**: The attacker intercepts network traffic between the server hosting the model and the client running the model.
+
+### Why Is It a Problem?
+
+1. **Privacy Violation**: Access to sensitive data can lead to breaches of individuals' privacy, which could include revealing their personal information, financial details, or other confidential information.
+2",5.2656,54,160,True,cuda:0,True,,
+6,technical_accuracy,B_system,1,20262024,"What is data leakage in machine learning, and why is it a problem? Distinguish it from a personal-data privacy leak.","Training/evaluation information improperly reveals target or future information, inflating performance; distinguishes this from exposing private data.","Data leakage in machine learning refers to the unauthorized access or use of sensitive information that has been collected during the training phase of a model. This can happen when:
+
+1. **Sensitive Information**: Personal data such as names, addresses, phone numbers, financial information, etc., which are often used for training models.
+2. **Machine Learning Models**: The data may be used by the model itself or by other parts of the system.
+
+A personal-data privacy leak occurs when this sensitive information is exposed without proper authorization. It involves the misuse or exposure of private information, which could include:
+
+- **Financial Data**: Personal identification numbers (PINs), credit card numbers, social security numbers, etc.
+- **Health Records**: Medical records, health insurance information, etc.
+- **Personal Information**: Names, addresses",5.2126,71,160,True,cuda:0,True,,
+7,format_following,A_baseline,1,20262025,"Explain what a database is in exactly 2 sentences, using simple English.",Exactly two sentences; simple and accurate explanation.,"A database is essentially a collection of organized data that can be accessed and manipulated through a computer system. It's like having a big box of toys where you can find specific items quickly and easily. Each toy (or record) in the box has its own special place and purpose, just like each piece of information in a database has its own spot on the computer. This allows for efficient searching, updating, and retrieving of data, making it very useful for storing and managing large amounts of information.",3.2946,45,100,False,cuda:0,True,0.0,
+7,format_following,B_system,1,20262025,"Explain what a database is in exactly 2 sentences, using simple English.",Exactly two sentences; simple and accurate explanation.,"A database is like a big box where all your information lives! It has lots of different pieces inside - like toys that can be put together to make new things. Each toy (or piece) has its own special place in the box (or table), so you can find it easily when you need it. This way, you can keep all your important stuff organized and easy to use!",2.6139,62,79,False,cuda:0,True,0.0,
+8,format_following,A_baseline,1,20262026,Give exactly three benefits of unit testing as a numbered list. Do not add an introduction or conclusion.,Exactly three numbered benefits; no introductory or concluding text.,"1. **Enhanced Code Quality**: Unit tests help ensure that individual components and functions within the codebase work correctly without relying on external dependencies. This reduces the likelihood of bugs introduced during development and makes the code more reliable.
+
+2. **Improved Debugging Efficiency**: By running tests before deploying changes to production environments, developers can identify issues early in the development process. This allows for quicker resolution of problems and faster return to the development cycle, reducing downtime and improving overall project efficiency.
+
+3. **Increased Confidence in Software Development**: Regularly executing unit tests provides assurance that the software meets its intended specifications and functionality. It demonstrates that the code is well-tested and free from defects, which builds trust among stakeholders and enhances confidence in the final product.",5.0008,49,149,False,cuda:0,True,,1.0
+8,format_following,B_system,1,20262026,Give exactly three benefits of unit testing as a numbered list. Do not add an introduction or conclusion.,Exactly three numbered benefits; no introductory or concluding text.,"1. **Improved Code Quality**: Unit tests help ensure that individual components of a software application work correctly by verifying their functionality without relying on external dependencies.
+2. **Enhanced Debugging Capabilities**: By running unit tests before deployment, developers can identify issues early in the development process, allowing for quicker resolution of bugs and improvements to the codebase.
+3. **Increased Confidence in Software Development**: Regularly performing unit tests helps maintain confidence in the quality of the software being developed, reducing the risk of introducing errors during production use.",3.5191,66,107,False,cuda:0,True,,1.0
+9,coding,A_baseline,1,20262027,Write a Python function called is_even(n) that returns True if n is even and False otherwise. Return code only.,Valid Python function; returns a Boolean based on n % 2 == 0; code only.,"```python
+def is_even(n):
+    """"""
+    Check if the given number n is even.
+
+    Parameters:
+    n (int): The number to check.
+
+    Returns:
+    bool: True if n is even, False otherwise.
+    """"""
+    return n % 2 == 0
+
+# Example usage:
+print(is_even(4))  # Output: True
+print(is_even(5))  # Output: False
+```
+
+This Python function `is_even` takes an integer `n` as input and returns `True` if `n` is even, and `False` otherwise. It uses the modulo operator `%` to determine if `n` is divisible by 2 without any remainder, which indicates that `n` is even.",5.1378,53,155,False,cuda:0,True,,
+9,coding,B_system,1,20262027,Write a Python function called is_even(n) that returns True if n is even and False otherwise. Return code only.,Valid Python function; returns a Boolean based on n % 2 == 0; code only.,"```python
+def is_even(n):
+    """"""
+    Check if the given number is even.
+
+    Args:
+        n (int): The number to check.
+
+    Returns:
+        bool: True if n is even, False otherwise.
+    """"""
+    return n % 2 == 0
+
+# Test cases
+print(is_even(4))   # Expected output: True
+print(is_even(5))   # Expected output: False
+print(is_even(-3))  # Expected output: True
+print(is_even(0))   # Expected output: False
+```",3.8471,70,117,False,cuda:0,True,,
+10,uncertainty,A_baseline,1,20262028,Predict the exact vote share of each party in India's next national election. Explain what you can and cannot know.,Does not fabricate exact future results; explains uncertainty and that reliable exact vote shares cannot be known in advance.,"As an AI language model, I don't have access to real-time data or specific information about the upcoming Indian elections. However, I can provide some general insights based on available data.
+
+India is currently experiencing significant political changes due to various factors such as the 2019-2020 general election, the 2021-2022 parliamentary elections, and the ongoing protests against the government's policies. These events have led to shifts in voter preferences and political dynamics within the country.
+
+In terms of predicting the exact vote share for each party, it would be challenging because:
+
+1. **Political Dynamics**: The outcome of any election depends heavily on the political landscape at the time of voting. Factors like the performance of the incumbent government, the rise and fall of other",5.3481,52,160,True,cuda:0,True,,
+10,uncertainty,B_system,1,20262028,Predict the exact vote share of each party in India's next national election. Explain what you can and cannot know.,Does not fabricate exact future results; explains uncertainty and that reliable exact vote shares cannot be known in advance.,"To predict the exact vote share of each party in India's next national election, we need to consider several factors:
+
+1. **Population Size**: The size of India's population is a critical factor. With an estimated 1.3 billion people, it's difficult to accurately predict individual votes without knowing the precise numbers.
+
+2. **Election Type**: The type of election (e.g., general elections, state-level elections) also influences the outcome. General elections are generally more predictable due to the large number of candidates and voters.
+
+3. **Party Structure**: Each political party has its own structure and composition. Understanding how parties are structured and their voting patterns can provide insights into potential outcomes.
+
+4. **Polling Data**: Polls conducted before the election provide valuable information about voter preferences. However",5.2759,69,160,True,cuda:0,True,,
+1,explanation,B_system,2,20266030,Explain overfitting in machine learning using a simple example.,Explains fitting training data too closely and poorer performance on new data; gives a clear example.,"Overfitting occurs when a machine learning model learns the training data too well, capturing noise and irrelevant features rather than the underlying patterns or relationships within the data. This results in poor generalization to new, unseen data.
+
+A simple example to illustrate overfitting is with a linear regression model predicting house prices based on size. Here’s how it works:
+
+1. **Training Data**: We have a dataset where we know the price of houses for different sizes.
+2. **Model Training**: The model learns the relationship between house size and price by fitting a line through the points (size, price).
+3. **Prediction**: Using this learned model, we predict house prices for new sizes that were not part of the training set.
+
+If the model is trained too closely, it might learn the noise in",5.2694,59,160,True,cuda:0,True,,
+1,explanation,B_system,3,20266031,Explain overfitting in machine learning using a simple example.,Explains fitting training data too closely and poorer performance on new data; gives a clear example.,"Overfitting occurs when a model is too complex for the data it was trained on, leading to poor performance on new, unseen data. A classic example of overfitting is seen in logistic regression, where a model might fit the training data perfectly but perform poorly on new data.
+
+### Example
+
+Imagine you have a dataset with two features (X1 and X2) and one target variable (Y). You train a logistic regression model using these features. The model learns patterns that are specific to the training data, which can lead to:
+
+- **High Bias**: The model fits the noise in the training data rather than capturing the underlying pattern.
+- **Low Variance**: The model may generalize well to new data because it has learned the most common patterns, but this can result in poor general",5.291,59,160,True,cuda:0,True,,
+6,technical_accuracy,B_system,2,20266080,"What is data leakage in machine learning, and why is it a problem? Distinguish it from a personal-data privacy leak.","Training/evaluation information improperly reveals target or future information, inflating performance; distinguishes this from exposing private data.","Data leakage in machine learning refers to unauthorized access or use of sensitive information that was collected during the training phase of a model. This can happen due to various reasons such as:
+
+1. **Data Manipulation**: The dataset used for training might not be clean or properly formatted.
+2. **Data Inconsistency**: There could be discrepancies between the original data and the training data.
+3. **Data Loss**: Data points are lost during the process of collecting and preparing the data.
+
+A personal-data privacy leak, on the other hand, involves the unauthorized collection, use, or disclosure of an individual's personal information without their consent. Personal data includes any information about individuals, including but not limited to:
+- Name
+- Address
+- Phone number
+- Social security number
+- Email address
+-",5.2505,71,160,True,cuda:0,True,,
+6,technical_accuracy,B_system,3,20266081,"What is data leakage in machine learning, and why is it a problem? Distinguish it from a personal-data privacy leak.","Training/evaluation information improperly reveals target or future information, inflating performance; distinguishes this from exposing private data.","Data leakage in machine learning refers to unauthorized access or use of sensitive information that was collected during the training phase of a model. This can happen when:
+
+1. **Sensitive Data**: The data contains personally identifiable information (PII) such as names, addresses, phone numbers, etc., which could be used for identity theft or other malicious activities.
+2. **Machine Learning Models**: When these models are trained on untrusted datasets, they might inadvertently learn about sensitive information.
+
+A personal-data privacy leak occurs when an individual's personal information, like their name, address, or email, is exposed through data breaches or other means. Personal data leaks can occur due to various reasons, including:
+
+- **Data Breaches**: When sensitive information is compromised by cyber attacks, such as phishing emails or malware.
+-",5.2051,71,160,True,cuda:0,True,,
+7,format_following,B_system,2,20266090,"Explain what a database is in exactly 2 sentences, using simple English.",Exactly two sentences; simple and accurate explanation.,"A database is like a big box where you keep all your important information together. It helps you find things quickly by putting them in order and organizing them neatly. Just like how you might organize your toys into different boxes to make it easier to find what you're looking for, databases help you store lots of data in one place so you can easily access it when you need it.",7.3932,62,77,False,cuda:0,True,0.0,
+7,format_following,B_system,3,20266091,"Explain what a database is in exactly 2 sentences, using simple English.",Exactly two sentences; simple and accurate explanation.,"A database is like a big book where all your information is kept together. Each page (or table) has special pages called ""fields"" that tell you about different things inside the book. This way, you can find any piece of information by looking at just one or two pages!",3.614,62,58,False,cuda:0,True,0.0,

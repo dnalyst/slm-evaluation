@@ -1,0 +1,21 @@
+test_id,condition,factual_correctness_0_2,relevance_completeness_0_2,instruction_following_0_2,clarity_0_2,reviewer_notes,total_quality_0_8
+1,A_baseline,1,1,1,1,General definition partly correct; example misleading; truncated,4
+1,B_system,2,1,1,1,Definition correct; example unfinished; token cap,5
+2,A_baseline,2,1,1,1,Classification correct; regression missing due to truncation,5
+2,B_system,1,2,2,1,Distinction and examples given; logistic regression mislabeled,6
+3,A_baseline,2,1,1,1,Discount computed; final price missing,5
+3,B_system,1,1,1,1,Currency changes from INR to GBP; final price missing,4
+4,A_baseline,2,2,2,2,Correct answer 28; minor trailing truncation,8
+4,B_system,2,2,2,2,Correct answer 28,8
+5,A_baseline,2,2,2,1,Correct validation use; verbose and truncated,7
+5,B_system,2,2,2,1,Correct validation use; verbose and truncated,7
+6,A_baseline,0,0,0,1,Confuses ML data leakage with privacy disclosure,1
+6,B_system,0,1,0,1,"Describes privacy disclosure, not ML data leakage",2
+7,A_baseline,2,2,0,2,Four sentences instead of exactly two,6
+7,B_system,1,1,0,2,Imprecise analogy and four sentences instead of two,4
+8,A_baseline,2,2,2,2,Three numbered benefits; no extras,8
+8,B_system,2,2,2,2,Three numbered benefits; no extras,8
+9,A_baseline,2,2,0,2,Correct function but adds prose after code,6
+9,B_system,1,2,2,1,Correct function; comments incorrectly label example outputs,6
+10,A_baseline,1,1,1,1,Avoids invented exact vote shares; unsupported assertions; truncated,4
+10,B_system,1,1,1,1,Avoids invented exact shares; generic and truncated,4
